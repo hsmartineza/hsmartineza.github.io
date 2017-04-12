@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="First Protoype IronHacks">
+	<meta name="author" content="Heyner  Martinez">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>First Prototype</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+	<script src="js/map.js" type="text/javascript"></script>
+	<script src="js/info.js" type="text/javascript"></script>
+	<script src="js/test.js" type="text/javascript"></script>
+
+<style>
+	
+
+#map{
+
+	border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+	margin-top: 15px;
+	position: absolute;
+    bottom: 30px;
+    right: 16px;
+    height: 700px;
+    width: 65%;
+    padding: 4px;
+    display: block;
+}
+
+#weather-container{
+
+	height: 50px;
+    width: 15%;
+    position: absolute;
+    margin-top: 17px;
+    top: 12px;
+    right: 16px;
+    border: 5px solid black;
+    border-radius: 5px;
+    background-color: white;
+    opacity: 0.6;
+ 
+
+}
+
+#weather{
+
+	color: #111; 
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	
+}
+
+#main{
+
+	color: #111; 
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	
+
+}
+
+
+#menu{
+	
+    height: 330px;
+    width: 27%;
+    margin-top: 15px;
+    position: absolute;  
+    padding: 50px;
+   	background-color: white;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+#h1{
+
+	color: #111; 
+	font-family: 'Open Sans Condensed', 
+	sans-serif; font-size: 64px; 
+	font-weight: 700; 
+	line-height: 64px; 
+	margin: 0 0 0; 
+	padding: 20px 30px; 
+	text-align: center; 
+	text-transform: uppercase; 
+
+}
+
+
+
+body {
+
+    background-image: url("chicago.jpg");
+    background-repeat: no-repeat;
+    background-position: fixed;
+
+}
+</style>>
+
+
+
+
+</head>>
+
+
+<body>
+
+<h1 id="h1"> Find a place in Chicago </h1>
+
+
+
+
+<div id="map"></div>
+
+<div id="weather-container">
+<div id="weather"></div>
+<div id="main"></div>		
+</div>
+
+<div id="menu"> 
+	<button onclick="ready()"> Show </button>
+
+</div>
+
+
+
+
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNzzu6X0wUKmABH3lBR5O7yGTEXihkuLo&callback=myMap"></script>
+
+
+
+
+</html>
